@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mysak\\Documents\\03_TEACHING\\02_SEMINAR_Z_PROGRAMOVANI\\25_26\\PrgSem1\\SeznameniSeCSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E07C7252-70FB-417D-B7A5-00C08F4C8A3D}|SeznameniSeCSharp\\SeznameniSeCSharp.csproj|c:\\users\\mysak\\documents\\03_teaching\\02_seminar_z_programovani\\25_26\\prgsem1\\seznamenisecsharp\\seznamenisecsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E07C7252-70FB-417D-B7A5-00C08F4C8A3D}|SeznameniSeCSharp\\SeznameniSeCSharp.csproj|solutionrelative:seznamenisecsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E07C7252-70FB-417D-B7A5-00C08F4C8A3D}|SeznameniSeCSharp\\SeznameniSeCSharp.csproj|c:\\users\\mysak\\documents\\03_teaching\\02_seminar_z_programovani\\25_26\\prgsem1\\seznamenisecsharp\\seznamenisecsharp\\kompilace_csharp.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{E07C7252-70FB-417D-B7A5-00C08F4C8A3D}|SeznameniSeCSharp\\SeznameniSeCSharp.csproj|solutionrelative:seznamenisecsharp\\kompilace_csharp.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "kompilace_csharp.md",
+              "DocumentMoniker": "C:\\Users\\mysak\\Documents\\03_TEACHING\\02_SEMINAR_Z_PROGRAMOVANI\\25_26\\PrgSem1\\SeznameniSeCSharp\\SeznameniSeCSharp\\kompilace_csharp.md",
+              "RelativeDocumentMoniker": "SeznameniSeCSharp\\kompilace_csharp.md",
+              "ToolTip": "C:\\Users\\mysak\\Documents\\03_TEACHING\\02_SEMINAR_Z_PROGRAMOVANI\\25_26\\PrgSem1\\SeznameniSeCSharp\\SeznameniSeCSharp\\kompilace_csharp.md",
+              "RelativeToolTip": "SeznameniSeCSharp\\kompilace_csharp.md",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-09-22T14:15:23.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mysak\\Documents\\03_TEACHING\\02_SEMINAR_Z_PROGRAMOVANI\\25_26\\PrgSem1\\SeznameniSeCSharp\\SeznameniSeCSharp\\Program.cs",
+              "RelativeDocumentMoniker": "SeznameniSeCSharp\\Program.cs",
+              "ToolTip": "C:\\Users\\mysak\\Documents\\03_TEACHING\\02_SEMINAR_Z_PROGRAMOVANI\\25_26\\PrgSem1\\SeznameniSeCSharp\\SeznameniSeCSharp\\Program.cs",
+              "RelativeToolTip": "SeznameniSeCSharp\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIAwwCoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:56:38.81Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

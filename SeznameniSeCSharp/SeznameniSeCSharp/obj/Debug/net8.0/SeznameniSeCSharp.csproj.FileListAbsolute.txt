@@ -1,0 +1,14 @@
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\bin\Debug\net8.0\SeznameniSeCSharp.exe
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\bin\Debug\net8.0\SeznameniSeCSharp.deps.json
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\bin\Debug\net8.0\SeznameniSeCSharp.runtimeconfig.json
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\bin\Debug\net8.0\SeznameniSeCSharp.dll
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\bin\Debug\net8.0\SeznameniSeCSharp.pdb
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\SeznameniSeCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\SeznameniSeCSharp.AssemblyInfoInputs.cache
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\SeznameniSeCSharp.AssemblyInfo.cs
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\SeznameniSeCSharp.csproj.CoreCompileInputs.cache
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\SeznameniSeCSharp.dll
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\refint\SeznameniSeCSharp.dll
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\SeznameniSeCSharp.pdb
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\SeznameniSeCSharp.genruntimeconfig.cache
+C:\Users\mysak\Documents\03_TEACHING\02_SEMINAR_Z_PROGRAMOVANI\25_26\PrgSem1\SeznameniSeCSharp\SeznameniSeCSharp\obj\Debug\net8.0\ref\SeznameniSeCSharp.dll
