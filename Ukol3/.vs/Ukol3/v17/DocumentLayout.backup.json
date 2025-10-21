@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\Ukol3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8FD3EC6-DDE8-4903-8185-078B549E4F4C}|Ukol3\\Ukol3.csproj|c:\\users\\admin\\documents\\bruno\\repos\\prgnukoly\\ukol3\\ukol3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8FD3EC6-DDE8-4903-8185-078B549E4F4C}|Ukol3\\Ukol3.csproj|solutionrelative:ukol3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\Ukol3\\Ukol3\\Program.cs",
+              "RelativeDocumentMoniker": "Ukol3\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\Ukol3\\Ukol3\\Program.cs",
+              "RelativeToolTip": "Ukol3\\Program.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAA4wDEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T16:25:07.947Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

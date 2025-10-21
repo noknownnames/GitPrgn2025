@@ -1,0 +1,15 @@
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\bin\Debug\net8.0\Ukol3.exe
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\bin\Debug\net8.0\Ukol3.deps.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\bin\Debug\net8.0\Ukol3.runtimeconfig.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\bin\Debug\net8.0\Ukol3.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\bin\Debug\net8.0\Ukol3.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.AssemblyInfo.cs
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.sourcelink.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\refint\Ukol3.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\Ukol3.genruntimeconfig.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Ukol3\Ukol3\obj\Debug\net8.0\ref\Ukol3.dll
