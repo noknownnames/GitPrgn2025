@@ -3,8 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\Ukol3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RetizekPratel\\RetizekPratel\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B8FD3EC6-DDE8-4903-8185-078B549E4F4C}|Ukol3\\Ukol3.csproj|c:\\users\\admin\\documents\\bruno\\repos\\prgnukoly\\ukol3\\ukol3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8FD3EC6-DDE8-4903-8185-078B549E4F4C}|Ukol3\\Ukol3.csproj|solutionrelative:ukol3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\SeznameniSeCSharp\\SeznameniSeCSharp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +20,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\SeznameniSeCSharp\\SeznameniSeCSharp\\Program.cs",
+              "RelativeDocumentMoniker": "..\\SeznameniSeCSharp\\SeznameniSeCSharp\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\SeznameniSeCSharp\\SeznameniSeCSharp\\Program.cs",
+              "RelativeToolTip": "..\\SeznameniSeCSharp\\SeznameniSeCSharp\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T19:22:51.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\Ukol3\\Ukol3\\Program.cs",
               "RelativeDocumentMoniker": "Ukol3\\Program.cs",
               "ToolTip": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\Ukol3\\Ukol3\\Program.cs",
               "RelativeToolTip": "Ukol3\\Program.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAA4wDEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T16:25:07.947Z",
+              "WhenOpened": "2025-11-12T18:36:11.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RetizekPratel\\RetizekPratel\\Program.cs",
+              "RelativeDocumentMoniker": "..\\RetizekPratel\\RetizekPratel\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RetizekPratel\\RetizekPratel\\Program.cs*",
+              "RelativeToolTip": "..\\RetizekPratel\\RetizekPratel\\Program.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:35:50.686Z",
               "EditorCaption": ""
             }
           ]

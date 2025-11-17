@@ -1,0 +1,15 @@
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.AssemblyInfo.cs
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.sourcelink.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\bin\Debug\net8.0\RetizekPratel.exe
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\bin\Debug\net8.0\RetizekPratel.deps.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\bin\Debug\net8.0\RetizekPratel.runtimeconfig.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\bin\Debug\net8.0\RetizekPratel.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\bin\Debug\net8.0\RetizekPratel.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\refint\RetizekPratel.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\RetizekPratel.genruntimeconfig.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\RetizekPratel\RetizekPratel\obj\Debug\net8.0\ref\RetizekPratel.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\GitPrgSem1_2526\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\GitPrgSem1_2526\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\GitPrgSem1_2526\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\GitPrgSem1_2526\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RabasUkolDruhyZMnoha\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\GitPrgSem1_2526\\RabasUkolDruhyZMnoha\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Documents\\Bruno\\REPOS\\PrgnUkoly\\RabasUkolDruhyZMnoha\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
