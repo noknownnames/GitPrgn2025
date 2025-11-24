@@ -10,23 +10,23 @@ namespace ConsoleApp2
             Console.Write("Přepsat výchozí hodnoty? (true/false prosím): ");
             bool zadatHodnoty = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine();
-            int pocetLidi = 3;
-            string kamaradickovani = "1-2 2-3";
-            int A = 1;
-            int B = 3;  
+            int pocetLidi = 7;
+            string kamaradickovani = "1-2 2-3 3-4 4-5 5-6 6-7";
+            int A = 0;
+            int B = 6;
             if (zadatHodnoty)
             {
                 Console.Write("Napište počet členů (int prosím): ");
                 pocetLidi = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine();
-                Console.Write("Napište spoje mezi členy (formát A-B A-C ... Y-Z prosím): ");
+                Console.Write("Napište spoje mezi členy (formát Atý-Btý Atý-Ctý ... Ytý-Ztý prosím): ");
                 kamaradickovani = Console.ReadLine();
                 Console.WriteLine();
-                Console.Write("Napište členy, mezi nimiž hledáte cestu (formát A-B prosím): ");
+                Console.Write("Napište členy, mezi nimiž hledáte cestu (formát Atý-Btý prosím): ");
                 string ABstring = Console.ReadLine();
                 string[] ABarray = ABstring.Split("-");
-                A = Convert.ToInt32(ABarray[0]);
-                B = Convert.ToInt32(ABarray[1]);
+                A = Convert.ToInt32(ABarray[0])-1;
+                B = Convert.ToInt32(ABarray[1])-1;
                 Console.WriteLine();
             }
             bool[,] graf = new bool[pocetLidi, pocetLidi];
@@ -34,25 +34,27 @@ namespace ConsoleApp2
             for (int i = 0; i < poleKamaradickovani.Length; i++)
             {
                 string[] dvojiceKamaradu = poleKamaradickovani[i].Split("-");
-                int V1 = Convert.ToInt32(dvojiceKamaradu[0])-1;
-                int V2 = Convert.ToInt32(dvojiceKamaradu[1])-1;
+                int V1 = Convert.ToInt32(dvojiceKamaradu[0]) - 1;
+                int V2 = Convert.ToInt32(dvojiceKamaradu[1]) - 1;
                 graf[V1, V2] = true;
                 graf[V2, V1] = true;
             }
             NeighbourMatrix GrafSousedu = new NeighbourMatrix(graf);
             GrafSousedu.VykreslitGraf();
-            List<int> list = GrafSousedu.NajitCestuMeziBody(A,B);
+            Console.WriteLine();
+            List<int> list = GrafSousedu.NajitCestuMeziBody(A, B);
             if (list.Count > 0)
             {
+                Console.WriteLine($"minimální řetěz spojující '{A+1}.' a '{B+1}.' člen vypadá takto:");
                 for (int i = list.Count - 1; i > 0; i--)
                 {
-                    Console.Write($"{list[i]},");
+                    Console.Write($"{list[i]}->");
                 }
                 Console.WriteLine(list[0]);
             }
             else
             {
-                Console.WriteLine($"Neexistuje žádný řetěz spojující '{A}' a '{B}'");
+                Console.WriteLine($"Neexistuje žádný řetěz spojující '{A+1}.' a '{B+1}.' člen");
             }
         }
         class NeighbourMatrix //paměťová složitost n^2
@@ -98,43 +100,39 @@ namespace ConsoleApp2
                     }
                 }
             }
-            public void PostupovatVeHledani(int step, DiscoveryMatrix discoveryMatrix)
-            {
-                    for (int i = 0; i < Size; i++)
-                    {
-                        if (Cleny[step, i] && !discoveryMatrix.Cleny[step, i])
-                        {
-                            if (i == discoveryMatrix.Finish)
-                            {
-                                discoveryMatrix.FoundFinish = true;
-                            }
-                            discoveryMatrix.Cleny[step,i] = true;
-                            discoveryMatrix.Cleny[i,step] = true;
-                            PostupovatVeHledani(i, discoveryMatrix);
-                            discoveryMatrix.PathFromFinish.Add(step);
-                        }
-                    }
-            }
             public List<int>? NajitCestuMeziBody(int start, int finish)
             {
-                bool[,] x = new bool[Size, Size];
-                DiscoveryMatrix discoveryMatrix = new DiscoveryMatrix(x, finish);
-                PostupovatVeHledani(start, discoveryMatrix);
-                return discoveryMatrix.PathFromFinish;
-            }
-            public class DiscoveryMatrix
-            {
-                public DiscoveryMatrix(bool[,] cleny, int finish)
+                Queue<int> queue = new Queue<int>();
+                bool[] nalezeno = new bool[Size];
+                nalezeno[start] = true;
+                int[] vzdalenost = new int[Size];
+                int?[] predchudce = new int?[Size];
+                queue.Enqueue(start);
+                while (queue.Count > 0)
                 {
-                    Cleny = cleny;
-                    Finish = finish;
-                    FoundFinish = false;
-                    PathFromFinish = new List<int>();
+                    int vrchol = queue.Dequeue();
+                    for (int i = 0; i < Size; i++)
+                    {
+                        if (Cleny[vrchol, i] && !nalezeno[i])
+                        {
+                            nalezeno[i] = true;
+                            vzdalenost[i] = vzdalenost[vrchol] + 1;
+                            predchudce[i] = vrchol;
+                            queue.Enqueue(i);
+                        }
+                    }
                 }
-                public bool[,] Cleny { get; set; }
-                public int Finish { get; set; }
-                public bool FoundFinish { get; set; }
-                public List<int> PathFromFinish { get; set; }
+                List<int> cesta = new List<int>();
+                if (nalezeno[finish] == true)
+                {
+                    while (predchudce[finish] != null)
+                    {
+                        cesta.Add(finish);
+                        finish = Convert.ToInt32(predchudce[finish]);
+                    }
+                    cesta.Add(finish);
+                }
+                return cesta;
             }
         }
     }

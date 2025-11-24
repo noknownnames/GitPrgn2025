@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RetizekPratel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eab0a5476bee3bd38760645303603ca0bc836bf7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db0d2e22ed81e65c6f6e204a6f14ae9f3a334f35")]
 [assembly: System.Reflection.AssemblyProductAttribute("RetizekPratel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RetizekPratel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
