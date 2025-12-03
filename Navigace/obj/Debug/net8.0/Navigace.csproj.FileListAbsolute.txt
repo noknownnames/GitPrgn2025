@@ -1,0 +1,15 @@
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\bin\Debug\net8.0\Navigace.exe
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\bin\Debug\net8.0\Navigace.deps.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\bin\Debug\net8.0\Navigace.runtimeconfig.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\bin\Debug\net8.0\Navigace.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\bin\Debug\net8.0\Navigace.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.AssemblyInfo.cs
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.sourcelink.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\refint\Navigace.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\Navigace.genruntimeconfig.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Navigace\obj\Debug\net8.0\ref\Navigace.dll
