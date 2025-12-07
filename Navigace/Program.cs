@@ -16,33 +16,33 @@ namespace ConsoleApp2
             Console.Write("Přepsat výchozí hodnoty? (true/false prosím): ");
             bool zadatHodnoty = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine();
-            int pocetLidi = 7;
-            string kamaradickovaniMest = "1;2;40;0 2;3;12;0 3;4;30;0 4;5;20;0 5;6;23;1 6;7;16;0";
+            int pocetMest = 7;
+            string kamaradickovaniMest = "0;1;1;1 0;2;2;1 1;3;2;0 2;3;1;1 3;4;1;1 3;6;4;0 3;5;2;0 4;6;2;0 4;5;1;0 5;6;1;0";
             int A = 0;
             int B = 6;
             int M = 1;
             if (zadatHodnoty)
             {
                 Console.Write("Napište počet měst (int prosím): ");
-                pocetLidi = Convert.ToInt32(Console.ReadLine());
+                pocetMest = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine();
-                Console.Write("Vypište tratě mezi městy, a jestli jsou placené(1) nebo neplacené(0) (formát Atovice;Btov;L1;1 Atovice;Cťany;L2;0 ... Ytky;ZnadVltavou;Ln;0 prosím): ");
+                Console.Write("Vypište tratě mezi městy, jejich délky a jestli jsou placené(1) nebo neplacené(0) (formát Atovice;Btov;L1;1 Atovice;Cťany;L2;0 ... Ytky;ZnadVltavou;Ln;0 prosím): ");
                 kamaradickovaniMest = Console.ReadLine();
                 Console.WriteLine();
-                Console.Write("Napište města, mezi nimiž města cestu (formát Atovice-Btov prosím): ");
+                Console.Write("Napište města, mezi nimiž města cestu (formát Atovice;Btov prosím): ");
                 string ABstring = Console.ReadLine();
-                string[] ABarray = ABstring.Split("-");
-                A = Convert.ToInt32(ABarray[0]) - 1;
-                B = Convert.ToInt32(ABarray[1]) - 1;
+                string[] ABarray = ABstring.Split(";");
+                A = Convert.ToInt32(ABarray[0]);
+                B = Convert.ToInt32(ABarray[1]);
                 Console.WriteLine();
                 Console.Write("Napište maximální počet placených silnic, přes které jste ochotni projet (int prosím): ");
                 M = Convert.ToInt32(Console.ReadLine());
             }
             string[] poleKamaradickovaniMest = kamaradickovaniMest.Split(" ");
-            double[,,] graf = new double[pocetLidi, pocetLidi, 2];
-            for (int i = 0; i < poleKamaradickovaniMest.Length; i++)
+            double[,,] graf = new double[pocetMest, pocetMest, 2];
+            for (int i = 0; i < graf.GetLength(0); i++)
             {
-                for (int j = 0; j < poleKamaradickovaniMest.Length; j++)
+                for (int j = 0; j < graf.GetLength(0); j++)
                 {
                     graf[i, j, 0] = double.PositiveInfinity;
                 }
@@ -50,8 +50,8 @@ namespace ConsoleApp2
             for (int i = 0; i < poleKamaradickovaniMest.Length; i++)
             {
                 string[] nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy = poleKamaradickovaniMest[i].Split(";");
-                int V1 = Convert.ToInt32(nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy[0]) - 1;
-                int V2 = Convert.ToInt32(nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy[1]) - 1;
+                int V1 = Convert.ToInt32(nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy[0]);
+                int V2 = Convert.ToInt32(nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy[1]);
                 graf[V1, V2, 0] = Convert.ToInt32(nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy[2]);
                 graf[V2, V1, 0] = Convert.ToInt32(nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy[2]);
                 graf[V1, V2, 1] = Convert.ToInt32(nejakDlouhaSilniceOdNekudNekamZaNejakyPrachy[3]);
@@ -59,7 +59,8 @@ namespace ConsoleApp2
             }
             NeighbourMatrix GrafSousedu = new NeighbourMatrix(graf);
             //GrafSousedu.VykreslitGraf();Console.WriteLine();
-            List<int> list = GrafSousedu.NajitCestuMeziMestyZaPrijatelnouCenuAtSeToClovekuNeprodrazi(A, B, M);
+            (List<int>?,double?) listAndLen = GrafSousedu.NajitCestuMeziMestyZaPrijatelnouCenuAtSeToClovekuNeprodrazi(A, B, M);
+            List<int>? list = listAndLen.Item1;
             if (list.Count > 0)
             {
                 Console.WriteLine($"minimální cesta od města '{A + 1}.' do města '{B + 1}.' za cenu, která neublíží peněžence vypadá takto:");
@@ -68,6 +69,8 @@ namespace ConsoleApp2
                     Console.Write($"{list[i]}->");
                 }
                 Console.WriteLine(list[0]);
+                Console.WriteLine();
+                Console.WriteLine($"Vzdálenost: {listAndLen.Item2}");
             }
             else
             {
@@ -117,7 +120,7 @@ namespace ConsoleApp2
                     }
                 }
             }
-            public List<int>? NajitCestuMeziMestyZaPrijatelnouCenuAtSeToClovekuNeprodrazi(int start, int finish, int maxPlacenychCest)
+            public (List<int>?,double?) NajitCestuMeziMestyZaPrijatelnouCenuAtSeToClovekuNeprodrazi(int start, int finish, int maxPlacenychCest)
             {
                 int mult = true ? 1 : -1;// true = ascending, použito v tom kódním ekvivalentu zrádného pseudokódního "řadku 8"
                 int priority = 0;
@@ -155,6 +158,7 @@ namespace ConsoleApp2
                     }
                 }
                 List<int> cesta = new List<int>();
+                double vzdalenost = celkovaVzdalenost[finish];
                 if (nalezeno[finish] == true)
                 {
                     while (predchudce[finish] != null)
@@ -164,7 +168,7 @@ namespace ConsoleApp2
                     }
                     cesta.Add(finish);
                 }
-                return cesta;
+                return (cesta, vzdalenost);
             }
         }
     }
