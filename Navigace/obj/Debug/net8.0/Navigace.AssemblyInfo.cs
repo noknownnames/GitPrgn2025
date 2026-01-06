@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Navigace")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75ff4e71b55f01d7588a3185dc18901e98be5ec9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d3b0d368730ee20fda1f6bcb8615a83484d54ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Navigace")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Navigace")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

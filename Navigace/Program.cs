@@ -16,10 +16,10 @@ namespace ConsoleApp2
             Console.Write("Přepsat výchozí hodnoty? (true/false prosím): ");
             bool zadatHodnoty = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine();
-            int pocetMest = 7;
-            string kamaradickovaniMest = "0;1;1;1 0;2;2;1 1;3;2;0 2;3;1;1 3;4;1;1 3;6;4;0 3;5;2;0 4;6;2;0 4;5;1;0 5;6;1;0";
+            int pocetMest = 5;
+            string kamaradickovaniMest = "0;1;1;1 1;2;3;1 0;3;2;0 3;4;3;1 4;2;1;0 1;4;5;1";
             int A = 0;
-            int B = 6;
+            int B = 2;
             int M = 1;
             if (zadatHodnoty)
             {
@@ -63,7 +63,7 @@ namespace ConsoleApp2
             List<int>? list = listAndLen.Item1;
             if (list.Count > 0)
             {
-                Console.WriteLine($"minimální cesta od města '{A + 1}.' do města '{B + 1}.' za cenu, která neublíží peněžence vypadá takto:");
+                Console.WriteLine($"minimální cesta od města '{A}' do města '{B}' za cenu, která neublíží peněžence vypadá takto:");
                 for (int i = list.Count - 1; i > 0; i--)
                 {
                     Console.Write($"{list[i]}->");
@@ -122,14 +122,15 @@ namespace ConsoleApp2
             }
             public (List<int>?,double?) NajitCestuMeziMestyZaPrijatelnouCenuAtSeToClovekuNeprodrazi(int start, int finish, int maxPlacenychCest)
             {
-                int mult = true ? 1 : -1;// true = ascending, použito v tom kódním ekvivalentu zrádného pseudokódního "řadku 8"
                 int priority = 0;
-                PriorityQueue<int,int> queue = new PriorityQueue<int,int>(Comparer<int>.Create((a, b) => a - b));
+                //PriorityQueue<int,int> queue = new PriorityQueue<int,int>(Comparer<int>.Create((a, b) => a - b));
+                PriorityQueue<int,int> queue = new PriorityQueue<int,int>();
                 bool[] nalezeno = new bool[Size];
                 nalezeno[start] = true;
                 double[] celkovaVzdalenost = new double[Size];
                 double[] celkovyPocetPlacenychSilnic = new double[Size];
                 Array.Fill<double>(celkovaVzdalenost, double.PositiveInfinity);
+                celkovaVzdalenost[start] = 0;
                 int?[] predchudce = new int?[Size];
                 queue.Enqueue(start,0);
                 while (queue.Count > 0)
@@ -138,19 +139,22 @@ namespace ConsoleApp2
                     List<double[]> nastupci = new List<double[]>();
                     for (int i = 0; i < Size; i++)
                     {
-                        if (Cleny[vrchol, i, 0] < double.PositiveInfinity && !nalezeno[i] && celkovyPocetPlacenychSilnic[vrchol] <= maxPlacenychCest)
+                        if (Cleny[vrchol, i, 0] < double.PositiveInfinity && celkovyPocetPlacenychSilnic[vrchol] <= maxPlacenychCest)
                         {
-                            nalezeno[vrchol] = true;
                             if (celkovaVzdalenost[vrchol] + Cleny[vrchol, i, 0] < celkovaVzdalenost[i])
                             {
                                 celkovaVzdalenost[i] = celkovaVzdalenost[vrchol] + Cleny[vrchol, i, 0];
+                                predchudce[i] = vrchol;
                             }
-                            celkovyPocetPlacenychSilnic[i] = celkovyPocetPlacenychSilnic[vrchol] + Cleny[vrchol, i, 1];
-                            predchudce[i] = vrchol;
-                            nastupci.Add([i,celkovaVzdalenost[i]]);
+                            nalezeno[vrchol] = true;
+                            if (!nalezeno[i])
+                            {
+                                celkovyPocetPlacenychSilnic[i] = celkovyPocetPlacenychSilnic[vrchol] + Cleny[vrchol, i, 1];
+                                nastupci.Add([i, celkovaVzdalenost[i]]);
+                            }
                         }
                     }
-                    nastupci.Sort((a, b) => mult * a[1].CompareTo(b[1]));
+                    nastupci.Sort((a, b) => a[1].CompareTo(b[1]));
                     foreach (double[] i in nastupci)
                     {
                         queue.Enqueue(Convert.ToInt16(i[0]), priority);
