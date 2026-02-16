@@ -1,0 +1,15 @@
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\bin\Debug\net8.0\Topologicke usporadani.exe
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\bin\Debug\net8.0\Topologicke usporadani.deps.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\bin\Debug\net8.0\Topologicke usporadani.runtimeconfig.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\bin\Debug\net8.0\Topologicke usporadani.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\bin\Debug\net8.0\Topologicke usporadani.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.AssemblyInfo.cs
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.sourcelink.json
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\refint\Topologicke usporadani.dll
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.pdb
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\Topologicke usporadani.genruntimeconfig.cache
+C:\Users\admin\Documents\Bruno\REPOS\PrgnUkoly\Topologicke usporadani\obj\Debug\net8.0\ref\Topologicke usporadani.dll
