@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ukol3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eab0a5476bee3bd38760645303603ca0bc836bf7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43b32cc0b9ccfa487249b380b1fbe2957f62185a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ukol3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ukol3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

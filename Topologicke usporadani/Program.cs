@@ -1,6 +1,10 @@
 ﻿using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-
+/*
+ ---BONUSOVÉ ZAMYŠLENÍ---
+1. ---
+2. vstup, který se nedá takto uspořádat: zyx xyx xyz xyx 
+ */
 namespace Topologicke_usporadani
 {
     internal class Program
@@ -8,33 +12,38 @@ namespace Topologicke_usporadani
         static List<int> TopologicalySortVertices(int[,] inputMatrix)
         {
             int NumberOfVerts = inputMatrix.GetLength(0);
-            List<int> sortedVertices = new List<int>;
+            List<int> sortedVertices = new List<int>();
             char[] verticeStatus = new char[NumberOfVerts];//[o]pen,[u]ndiscovered,[c]losed
-            foreach (int i in sortedVertices)
-                verticeStatus [i] = 'u';
-            foreach (int i in sortedVertices)
+            for (int i = 0; i < sortedVertices.Count; i++)
+                verticeStatus[i] = 'u';
+            for (int i = 0; i < sortedVertices.Count; i++)
             {
-                if (sortedVertices[i] == 'u')
+                if (verticeStatus[i] == 'u')
                     _dfs(i);
             }
-            List<int> reversedSortedVertices = new List<int>;
-            for  
             void _dfs(int vertex)
             {
                 verticeStatus[vertex] = 'o';
-                for (int i = 0; i < NumberOfVerts;i++)
+                for (int i = 0; i < NumberOfVerts; i++)
                 {
-                    if (inputMatrix[vertex,i] == -1)
+                    if (inputMatrix[vertex, i] == -1)
                     {
                         if (verticeStatus[i] == 'o')
                             throw new Exception("Graf obsahuje cyklus, nelze seřadit!");
-                        else if (verticeStatus[i] == 'u')
+                        if (verticeStatus[i] == 'u')
                             _dfs(i);
                     }
                     verticeStatus[vertex] = 'c';
                     sortedVertices.Add(i);
                 }
             }
+            //otáčíme pole o 180
+            List<int> reversedSortedVertices = new List<int>();
+            for (int i = 0; i < sortedVertices.Count; i++)
+            {
+                sortedVertices[i] = reversedSortedVertices[sortedVertices.Count - i];
+            }
+            return reversedSortedVertices;
         }
         static List<char>[] TurnSringInputIntoListOfCharArrays(string input) 
         {
@@ -49,6 +58,7 @@ namespace Topologicke_usporadani
                     charArrayOfLists[i].Add(charArray[j]);
                 }
             }
+
             return charArrayOfLists;
         }
         static List<char> SampleEachUniqueCharacter(List<char>[] charArrayOfLists)
@@ -58,59 +68,52 @@ namespace Topologicke_usporadani
             {
                 foreach (char character in charArrayOfLists[i])
                 {
+                    bool isCharSampled = false;
                     foreach (char sample in samples)
                     {
                         if (character == sample )
                         {
-                            break;
+                            isCharSampled = true;
                         }
-                        samples.Add(sample);
+                    }
+                    if (!isCharSampled)
+                    {
+                        samples.Add(character);
                     }
                 }
             }
             return samples;
         }
-        static List<char[]> SampleRelationshipsBetweenCharacters(List<char>[] charArrayOfLists)
+        static List<char[]> SampleRelationshipsBetweenCharacters(List<char>[] listOfCharArrays)
         {
             List<char[]> earlierToLaterRelationshipsInAlphabet = new List<char[]>();
-            for (int i = 0; i < charArrayOfLists.Length - 1; i++)
+            for (int i = 0; i < listOfCharArrays.Length - 1; i++)
             {
-                int arrayLen = charArrayOfLists[i].Count;
-                int secondArrayLen = charArrayOfLists[i + 1].Count;
+                int arrayLen = listOfCharArrays[i].Count;
+                int secondArrayLen = listOfCharArrays[i + 1].Count;
                 if (arrayLen > secondArrayLen)
                 {
                     arrayLen = secondArrayLen;
                 }
-                /*hledáme 2x2 prostor v našem poli listů
+                /*hledáme 2x2 prostor v našem poli listů 
                      A|A B| 
                      A|A C|
                      B A D
-                    ve kterém můžeme porovnat, která písmena po sobě musí následovat
+                    ve kterém můžeme porovnat, která písmena po sobě musí následovat 
+                //doublecomment: ^^^počkat, to vlastně nedává smysl...
                 */
                 for (int j = arrayLen - 1; j > 0; j--)
                 {
-                    if (charArrayOfLists[i][j - 1] == charArrayOfLists[i + 1][j - 1] && charArrayOfLists[i][j] != charArrayOfLists[i + 1][j])
+                    if (listOfCharArrays[i][j - 1] == listOfCharArrays[i + 1][j - 1] && listOfCharArrays[i][j] != listOfCharArrays[i + 1][j])
                     {
-                        foreach (char[] realtionship in earlierToLaterRelationshipsInAlphabet)
-                        {
-                            if (realtionship[0] == charArrayOfLists[i][j] && realtionship[1] == charArrayOfLists[i - 1][j])
-                            {
-                                break;
-                            }
-                            earlierToLaterRelationshipsInAlphabet.Add([Convert.ToChar(charArrayOfLists[i][j]), Convert.ToChar(charArrayOfLists[i - 1][j])]);
-                        }
+                        Console.WriteLine($"{listOfCharArrays[i][j]},{listOfCharArrays[i+1][j]}");
+                        earlierToLaterRelationshipsInAlphabet.Add([Convert.ToChar(listOfCharArrays[i][j]), Convert.ToChar(listOfCharArrays[i+1][j])]);
                     }
                 }
-                if (charArrayOfLists[i][0] != charArrayOfLists[i + 1][0])//pro případ, kdy porovnáváme první písmeno v řádku
+                if (listOfCharArrays[i][0] != listOfCharArrays[i + 1][0])//pro případ, kdy porovnáváme první písmeno v řádku
                 {
-                    foreach (char[] realtionship in earlierToLaterRelationshipsInAlphabet)
-                    {
-                        if (realtionship[0] == charArrayOfLists[i][0] && realtionship[1] == charArrayOfLists[i - 1][0])
-                        {
-                            break;
-                        }
-                        earlierToLaterRelationshipsInAlphabet.Add([Convert.ToChar(charArrayOfLists[i][0]), Convert.ToChar(charArrayOfLists[i - 1][0])]);
-                    }
+                    Console.WriteLine($"{listOfCharArrays[i][0]};{listOfCharArrays[i+1][0]}");
+                    earlierToLaterRelationshipsInAlphabet.Add([Convert.ToChar(listOfCharArrays[i][0]), Convert.ToChar(listOfCharArrays[i+1][0])]);
                 }
             }
             return earlierToLaterRelationshipsInAlphabet;
@@ -145,7 +148,6 @@ namespace Topologicke_usporadani
             }
             return incidenceMatrix;
         }
-        
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
@@ -155,6 +157,30 @@ namespace Topologicke_usporadani
             Dictionary<int, char> numberToNameLookup = CreateNumberLetterPairs(uniqueCharList);
             Dictionary<char, int> nameToNumberLookup = CreateReversedNumberLetterPairs(uniqueCharList);
             int[,] relationshipIncidenceMatrix = RelationshipDictionaryToIncidenceMatrix(earlierToLaterCharacterRelationships, uniqueCharList.Count, nameToNumberLookup);
+            
+            for (int i = 0; i < relationshipIncidenceMatrix.GetLength(0);i++)// ヾ(≧▽≦*)o
+            {
+                for (int j = 0; j < relationshipIncidenceMatrix.GetLength(1); j++)
+                {
+                    Console.Write($"|{relationshipIncidenceMatrix[i,j]}");
+                }
+                Console.WriteLine("|");
+            }
+
+            List<int> relationshipsBetweenTheVertices = TopologicalySortVertices(relationshipIncidenceMatrix);
+            Console.WriteLine();
+            if (relationshipsBetweenTheVertices.Count > 0)
+            {
+                Console.Write(relationshipsBetweenTheVertices[0]);
+                for (int i = 1; i < relationshipsBetweenTheVertices.Count; i++)
+                {
+                    Console.Write($" --> {relationshipsBetweenTheVertices[i]}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Tyto znaky nemají žádné uspořádání; ó, jakýžto chaós!");
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Topologicke usporadani")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e237cf5b111d16d0891c91c392931bd10b9389a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43b32cc0b9ccfa487249b380b1fbe2957f62185a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Topologicke usporadani")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Topologicke usporadani")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
