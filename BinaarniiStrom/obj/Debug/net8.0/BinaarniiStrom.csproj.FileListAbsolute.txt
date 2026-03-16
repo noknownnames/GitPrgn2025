@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\bin\Debug\net8.0\BinaarniiStrom.exe
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\bin\Debug\net8.0\BinaarniiStrom.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\bin\Debug\net8.0\BinaarniiStrom.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\bin\Debug\net8.0\BinaarniiStrom.dll
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\bin\Debug\net8.0\BinaarniiStrom.pdb
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.dll
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\refint\BinaarniiStrom.dll
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.pdb
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\BinaarniiStrom.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\BinaarniiStrom\obj\Debug\net8.0\ref\BinaarniiStrom.dll

@@ -84,7 +84,7 @@ namespace Topologicke_usporadani
             }
             return samples;
         }
-        static List<char[]> SampleRelationshipsBetweenCharacters(List<char>[] listOfCharArrays)
+        static List<char[]> SampleRelationshipsBetweenCharacters(List<char>[] listOfCharArrays)//nic tady nefunguje...
         {
             List<char[]> earlierToLaterRelationshipsInAlphabet = new List<char[]>();
             for (int i = 0; i < listOfCharArrays.Length - 1; i++)
@@ -157,16 +157,6 @@ namespace Topologicke_usporadani
             Dictionary<int, char> numberToNameLookup = CreateNumberLetterPairs(uniqueCharList);
             Dictionary<char, int> nameToNumberLookup = CreateReversedNumberLetterPairs(uniqueCharList);
             int[,] relationshipIncidenceMatrix = RelationshipDictionaryToIncidenceMatrix(earlierToLaterCharacterRelationships, uniqueCharList.Count, nameToNumberLookup);
-            
-            for (int i = 0; i < relationshipIncidenceMatrix.GetLength(0);i++)// ヾ(≧▽≦*)o
-            {
-                for (int j = 0; j < relationshipIncidenceMatrix.GetLength(1); j++)
-                {
-                    Console.Write($"|{relationshipIncidenceMatrix[i,j]}");
-                }
-                Console.WriteLine("|");
-            }
-
             List<int> relationshipsBetweenTheVertices = TopologicalySortVertices(relationshipIncidenceMatrix);
             Console.WriteLine();
             if (relationshipsBetweenTheVertices.Count > 0)
