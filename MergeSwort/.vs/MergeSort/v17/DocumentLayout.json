@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B353EBE-E148-4491-B304-C20B5589636C}|MergeSort.Tests\\MergeSort.Tests.csproj|c:\\users\\admin\\source\\repos\\gitprgn2025\\mergeswort\\mergesort.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B353EBE-E148-4491-B304-C20B5589636C}|MergeSort.Tests\\MergeSort.Tests.csproj|solutionrelative:mergesort.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFEAAB3B-F951-4F82-BD7E-85307BD2F85D}|MergeSort\\MergeSort.csproj|c:\\users\\admin\\source\\repos\\gitprgn2025\\mergeswort\\mergesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFEAAB3B-F951-4F82-BD7E-85307BD2F85D}|MergeSort\\MergeSort.csproj|solutionrelative:mergesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFEAAB3B-F951-4F82-BD7E-85307BD2F85D}|MergeSort\\MergeSort.csproj|c:\\users\\admin\\source\\repos\\gitprgn2025\\mergeswort\\mergesort\\mergesort.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BFEAAB3B-F951-4F82-BD7E-85307BD2F85D}|MergeSort\\MergeSort.csproj|solutionrelative:mergesort\\mergesort.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B353EBE-E148-4491-B304-C20B5589636C}|MergeSort.Tests\\MergeSort.Tests.csproj|c:\\users\\admin\\source\\repos\\gitprgn2025\\mergeswort\\mergesort.tests\\mergesort.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6B353EBE-E148-4491-B304-C20B5589636C}|MergeSort.Tests\\MergeSort.Tests.csproj|solutionrelative:mergesort.tests\\mergesort.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MergeSort.Tests",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort.Tests\\MergeSort.Tests.csproj",
+              "RelativeDocumentMoniker": "MergeSort.Tests\\MergeSort.Tests.csproj",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort.Tests\\MergeSort.Tests.csproj",
+              "RelativeToolTip": "MergeSort.Tests\\MergeSort.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-23T22:05:25.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MergeSort.csproj",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort\\MergeSort.csproj",
+              "RelativeDocumentMoniker": "MergeSort\\MergeSort.csproj",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort\\MergeSort.csproj",
+              "RelativeToolTip": "MergeSort\\MergeSort.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-10T08:15:09.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "MergeSort.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "MergeSort.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAwGUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T22:04:22.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort\\Program.cs",
+              "RelativeDocumentMoniker": "MergeSort\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\MergeSwort\\MergeSort\\Program.cs",
+              "RelativeToolTip": "MergeSort\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA8wAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T07:53:55.431Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

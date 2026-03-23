@@ -35,7 +35,7 @@ namespace BinaarniiStrom
             zak = tree.Min().Value;
             Console.WriteLine($"Student s nejnižším IDje:{zak.FirstName} {zak.LastName} ze třídy {zak.ClassName}");
             // Vložte vlastního studenta s ID > 100 (je potřeba vytvořit nový objekt typu Student) a zkuste ho pak najít
-            zak = new Student(101, "Tereza", "Granátová", 13, "A1");
+            zak = new Student(101, "Terezi", "Pyrope", 13, "A1");
             tree.Insert(101, zak);
             zak = tree.Find(101);
             Console.WriteLine($"Student s ID 20 je:{zak.FirstName} {zak.LastName} ze třídy {zak.ClassName}");
@@ -46,7 +46,6 @@ namespace BinaarniiStrom
                     {
                         tree.Remove(i);
                     }
-                
             }
             // Vypište strom (měli byste vidět jen ID lichá a seřazená)
             tree.Write();
