@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinearniRadiciAlgoritmy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43b32cc0b9ccfa487249b380b1fbe2957f62185a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6b081147a1da63d99ac684a7d536ea40f0dae6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinearniRadiciAlgoritmy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinearniRadiciAlgoritmy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
