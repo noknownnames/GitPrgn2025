@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\bin\Debug\net8.0\RychloTřid.exe
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\bin\Debug\net8.0\RychloTřid.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\bin\Debug\net8.0\RychloTřid.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\bin\Debug\net8.0\RychloTřid.dll
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\bin\Debug\net8.0\RychloTřid.pdb
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.dll
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\refint\RychloTřid.dll
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.pdb
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\RychloTřid.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\RychloTřid\obj\Debug\net8.0\ref\RychloTřid.dll
