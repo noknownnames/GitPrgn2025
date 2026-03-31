@@ -29,17 +29,17 @@ namespace BinaarniiStrom
                 }
             }
             // Najděte studenta s ID 20 (David Urban (ID: 20) ze třídy 4.A)
-            Student zak = tree.Find(20);
+            Student zak = tree.Find(20).Value;
             Console.WriteLine($"Student s ID 20 je:{zak.FirstName} {zak.LastName} ze třídy {zak.ClassName}"); //TOSLEUTHOUT proč se neukazuje třída?????
             // Najděte studenta s nejnižším ID (Kateřina Sedláček (ID: 1) ze třídy 1.B)
             zak = tree.Min().Value;
             Console.WriteLine($"Student s nejnižším IDje:{zak.FirstName} {zak.LastName} ze třídy {zak.ClassName}");
             // Vložte vlastního studenta s ID > 100 (je potřeba vytvořit nový objekt typu Student) a zkuste ho pak najít
-            zak = new Student(101, "Terezi", "Pyrope", 13, "A1");
+            zak = new Student(101, "Martin", "Mastný", 13, "AlbaquerqueNM");
             tree.Insert(101, zak);
-            zak = tree.Find(101);
+            zak = tree.Find(101).Value;
             Console.WriteLine($"Student s ID 20 je:{zak.FirstName} {zak.LastName} ze třídy {zak.ClassName}");
-            // Smažte všechny studenty se sudým ID
+            //(ne)Smažte všechny studenty se sudým ID
             for (int i = 0; i < 101; i += 2)
             {
                 if (tree.Exists(i))
@@ -103,13 +103,13 @@ namespace BinaarniiStrom
                 _find(Root, searchedNodeKey);
             return exists;
         }
-        public T Find(int searchedNodeKey)
+        public Node<T> Find(int searchedNodeKey)
         {
-            T found = default(T);
+            Node<T> found = default(Node<T>);
             void _find(Node<T> node, int searchedKey)
             {
                 if (node.Key == searchedKey)
-                    found = node.Value;
+                    found = node;
                 if (searchedKey < node.Key)
                     if (node.LeftSon != null)
                         _find(node.LeftSon, searchedKey);
@@ -122,22 +122,20 @@ namespace BinaarniiStrom
         }
         public void Write()
         {
-            Console.Write("[Key;Value]:");
-            void _write(Node<T> node)
+            int maxkey = Max().Key;
+            for(int i =0;i<=maxkey;i++)
             {
-                Console.Write($"[{node.Key};{node.Value}]");
-                if (node.LeftSon != null)
-                    _write(node.LeftSon);
-                if (node.RightSon != null)
-                    _write(node.RightSon);
+                if(Exists(i))
+                {
+                    Node<T> node = Find(i);
+                    Console.WriteLine($"{node.Key};{node.Value}");
+                }
             }
-            if(Root != null)
-                _write(Root);
         }
         public void Remove(int removeKey)
         {
             if(!Exists(removeKey))
-                throw new Exception("L(> ~ <) ERROR: nelze odstranit prvek, který se nenachází ve stromu v první řadě!");
+                throw new Exception("L(> ~ <)Γ ERROR: nelze odstranit prvek, který se nenachází ve stromu v první řadě!");
             else
             {
                 Queue<Node<T>> orphans = new Queue<Node<T>>();
@@ -208,6 +206,18 @@ namespace BinaarniiStrom
             return _min(Root);
 
         }
+        public Node<T> Max()
+        {
+            Node<T> _max(Node<T> node)
+            {
+                if (node.RightSon == null)
+                    return node;
+                return _max(node.RightSon);
+            }
+
+            return _max(Root);
+
+        }
     }
     class Node<T> // T může být libovolný typ
     {
@@ -235,12 +245,13 @@ namespace BinaarniiStrom
 
         public string ClassName { get; }
 
-        public Student(int id, string firstName, string lastName, int age, string ClassName)
+        public Student(int id, string firstName, string lastName, int age, string className)
         {
             Id = id;
             FirstName = firstName;
             LastName = lastName;
             Age = age;
+            ClassName = className;
         }
 
         // aby se nám při Console.WriteLine(student) nevypsala jen nějaká adresa v paměti,

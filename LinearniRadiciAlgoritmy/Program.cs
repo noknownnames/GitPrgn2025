@@ -73,10 +73,10 @@ namespace PololetniUloha
                 Console.WriteLine(ConvertBucketsToString(prihradky));
                 //Vypis podle cetnosti
                 StringBuilder sb = new StringBuilder();
-                foreach (int znamka in prihradky)
+                for (int i = 0; i<prihradky.Length; i++)
                 {
-                    sb.Append('|');
-                    for (int i = 0; i < Math.Ceiling(Math.Log10(znamka)); i++)
+                    sb.Append($"|{i+1}");
+                    for (int j = 0; j < Math.Ceiling(Math.Log10(prihradky[i]))-1; j++)
                     {
                         sb.Append(' ');
                     }

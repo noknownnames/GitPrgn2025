@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BinaarniiStrom")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20b3ff52fe25ad8fb4240f850ddd58cfe73455bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+694f5cf8c9e227bcb2fd112461317f250e6ac730")]
 [assembly: System.Reflection.AssemblyProductAttribute("BinaarniiStrom")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BinaarniiStrom")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,3 +1,5 @@
+1. Bonus č.1:
+    
 2. Bonus č.2:
     Množinu všech seřazených prvků můžeme rozdělit na čtyři části, jelikož je stejá pravděpodobnost, že náhodně vybereme jakoukoliv hodnotu uvnitř těchto úseků a každý je stejně velký. víme tedy, že hodnoty v prvním a posledním úseku nejsou v rozmezí skoromediánu.
 

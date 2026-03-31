@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\bin\Debug\net8.0\BogogSport.exe
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\bin\Debug\net8.0\BogogSport.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\bin\Debug\net8.0\BogogSport.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\bin\Debug\net8.0\BogogSport.dll
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\bin\Debug\net8.0\BogogSport.pdb
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.dll
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\refint\BogogSport.dll
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.pdb
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\BogogSport.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\BogogSport\obj\Debug\net8.0\ref\BogogSport.dll
