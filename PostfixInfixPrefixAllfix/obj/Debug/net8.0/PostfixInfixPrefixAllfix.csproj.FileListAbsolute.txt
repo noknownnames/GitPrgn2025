@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\bin\Debug\net8.0\PostfixInfixPrefixAllfix.exe
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\bin\Debug\net8.0\PostfixInfixPrefixAllfix.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\bin\Debug\net8.0\PostfixInfixPrefixAllfix.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\bin\Debug\net8.0\PostfixInfixPrefixAllfix.dll
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\bin\Debug\net8.0\PostfixInfixPrefixAllfix.pdb
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.dll
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\refint\PostfixInfixPrefixAllfix.dll
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.pdb
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\PostfixInfixPrefixAllfix.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\PostfixInfixPrefixAllfix\obj\Debug\net8.0\ref\PostfixInfixPrefixAllfix.dll
