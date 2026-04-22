@@ -12,7 +12,7 @@ namespace VyrazovyStrom
         {
             Console.WriteLine("                                     ╔═════════════════════════╩═════════════════════════╗\r\n                                     ║                                        _          ║\r\n                   ╔═════════════════╩═════════════════╗                     / |_        ║\r\n                   ║                                   ║       _       .--. `| |-'_ .--.   .--.   _ .--..--. \r\n        ╔══════════╩═════════╗                         ║      / ]     ( (`\\] | | [ `/'`\\]/ .'`\\ \\[ `.-. .-. |\r\n        ║   _                ║               .--.   _   __  _'[/__     `'.'. | |, | |    | \\__. | | | | | | |  \r\n        ║  / ]               ║             / .'`\\ \\[ \\ [  ][ \\ [  ]   [\\__) )\\__/[___]    '.__.' [___||__||__]\r\n _   __  _'[/__     _ .--.  ,--.   ____    | \\__. | \\ \\/ /  \\ '/ /\r\n[ \\ [  ][ \\ [  ]   [ `/'`\\]`'_\\ : [_   ]    '.__.'   \\__/ [\\_:  /\r\n \\ \\/ /  \\ '/ /     | |    // | |, .' /_                   \\__.'  \r\n  \\__/ [\\_:  /     [___]   \\'-;__/[_____] \r\n        \\__.'\n");
             ExpressionTree tree = new ExpressionTree();
-            Console.WriteLine("┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐\n│Napište v postfixu výraz, který chcete spočítat(operátory: + ,- ,* ,/ ,^ , log, max, min; konstanty: e, pi) │\n└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
+            Console.WriteLine("┌──────────────────────────────────────────────────────────────────────────────────────────────────────┐\n│Napište výraz v postfixu(operátory: +, -, *, /, ^, log, max, min, mod, %, zpd, dbz; konstanty: e, pi) │\n└──────────────────────────────────────────────────────────────────────────────────────────────────────┘");
             tree.PostfixToTree(Console.ReadLine());
             Console.WriteLine();
             tree.Print(false);
@@ -271,6 +271,16 @@ namespace VyrazovyStrom
                     return Convert.ToDouble(_evaluate(i * 2));
                 }
                 return Convert.ToDouble(_evaluate(i * 2 + 1));
+            }
+            if (Tree[i - 1] == "zpd" || Tree[i - 1] == "mod" || Tree[i - 1] == "%")
+            {
+                return Convert.ToDouble(_evaluate(i * 2)) % Convert.ToDouble(_evaluate(i * 2 + 1));
+            }
+            if (Tree[i - 1] == "dbz")
+            {
+                double l = Convert.ToDouble(_evaluate(i * 2));
+                double r = Convert.ToDouble(_evaluate(i * 2 + 1));
+                return (l - (l % r))/r;
             }
             return double.NaN;
         }
