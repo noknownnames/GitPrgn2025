@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel;
+using System.Text;
+using static Connect4.Program;
 namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│┤├┬┴┼││═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬
 {
     internal class Program
@@ -19,17 +21,13 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("╔═══════════════════════════════════════▀▀══════════════════════▀▀═════════════════════▀▄▀══════════════════════════════════════╗");
-            Console.WriteLine("║ █▀▀▀▄ █▀▀▀▄ ▄▀▀▀▄ █▀▀▀▄ ▄▀▀▀▄ █▀▀▀▄ ▄▀▀▀▄ █   █ ▄▀▀▀▄ ▄▀▀▀▄ ▀▀█▀▀       █▀▀▀▄ ▀▀█▀▀ ▄▀▀▀▄ █  ▄▀ █   █ ▄▀▀▀▄ █▀▀▀▄ █  ▄▀ ▀▄ ▄▀ ║");
-            Console.WriteLine("║ █▀▀▀  █▀█▀  █   █ █▀▀▀  █▀▀▀█ █   █ █▀▀▀█ █   █ █▀▀▀█ █       █         █▀▀▀    █    ▀▀▀▄ █▀▀▄  █   █ █   █ █▀█▀  █▀▀▄    █   ║");
-            Console.WriteLine("║ █     █  ▀▄ ▀▄▄▄▀ █     █   █ █▄▄▄▀ █   █  ▀▄▀  █   █ ▀▄▄▄▀ ▄▄█▄▄       █     ▄▄█▄▄ ▀▄▄▄▀ █   █  ▀▄▀  ▀▄▄▄▀ █  ▀▄ █   █   █   ║");
-            Console.WriteLine("╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝");
+            Console.WriteLine(" _______________________________________________________________________________________________________________________\r\n \\      ________  ________  ________  ________  ________  ________     ____   ___      ___ ________  ________     ____  \\\r\n  \\    |\\   __  \\|\\   __  \\|\\   __  \\|\\   __  \\|\\   __  \\|\\   ___ \\   /___/| |\\  \\    /  /|\\   __  \\|\\   ____\\   /___/|  \\\r\n   \\   \\ \\  \\|\\  \\ \\  \\|\\  \\ \\  \\|\\  \\ \\  \\|\\  \\ \\  \\|\\  \\ \\  \\_|\\ \\  |___|/_\\ \\  \\  /  / | \\  \\|\\  \\ \\  \\___|\\  |___|/   \\\r\n    \\   \\ \\   ____\\ \\   _  _\\ \\  \\\\\\  \\ \\   ____\\ \\   __  \\ \\  \\ \\\\ \\|\\   __  \\ \\  \\/  / / \\ \\   __  \\ \\  \\    \\|\\  \\      \\\r\n     \\   \\ \\  \\___|\\ \\  \\\\  \\\\ \\  \\\\\\  \\ \\  \\___|\\ \\  \\ \\  \\ \\  \\_\\\\ \\ \\  \\|\\  \\ \\    / /   \\ \\  \\ \\  \\ \\  \\____\\ \\  \\      \\\r\n      \\   \\ \\__\\    \\ \\__\\\\ _\\\\ \\_______\\ \\__\\    \\ \\__\\ \\__\\ \\_______\\ \\   __  \\ \\__/ /     \\ \\__\\ \\__\\ \\_______\\ \\__\\      \\\r\n       \\   \\|__|     \\|__|\\|__|\\|_______|\\|__|     \\|__|\\|__|\\|_______|\\ \\__\\ \\__\\|__|/       \\|__|\\|__|\\|_______|\\|__|       \\\r\n        \\        ________  ___    __  __  ___  __    ___      ___ ______\\|__|_\\|__|__  ___  __       ___    ___                \\\r\n         \\      |\\   __  \\|\\  \\  |\\_\\|__\\|\\  \\|\\  \\ |\\  \\    /  /|\\   __  \\|\\   __  \\|\\  \\|\\  \\     |\\  \\  /  /|                \\\r\n          \\     \\ \\  \\|\\  \\ \\  \\ \\|_____|\\ \\  \\/  /|\\ \\  \\  /  / | \\  \\|\\  \\ \\  \\|\\  \\ \\  \\/  /|_   \\ \\  \\/  / /                 \\\r\n           \\     \\ \\   ____\\ \\  \\|\\   ____\\_\\   ___  \\ \\  \\/  / / \\ \\  \\\\\\  \\ \\   _  _\\ \\   ___  \\   \\ \\    / /                   \\\r\n            \\     \\ \\  \\___|\\ \\  \\ \\  \\____\\ \\  \\\\ \\  \\ \\    / /   \\ \\  \\\\\\  \\ \\  \\\\  \\\\ \\  \\\\ \\  \\   \\/  /  /                     \\\r\n             \\     \\ \\__\\    \\ \\__\\ \\_____  \\ \\__\\\\ \\__\\ \\__/ /     \\ \\_______\\ \\__\\\\ _\\\\ \\__\\\\ \\__\\__/  / /                        \\\r\n              \\     \\|__|     \\|__| |_____\\  \\|__| \\|__|\\|__|/       \\|_______|\\|__|\\|__|\\|__| \\|__|\\___/ /                          \\\r\n               \\                   |\\_________\\                                                    \\|___|/                            \\\r\n                \\                  \\|_________|                                                                                        \\\r\n                 \\______________________________________________________________________________________________________________________\\ ");
             Console.WriteLine("Gamemaster (-■_■): Vítejte ve hře 'Propadávací piškvorky', než budeme hrát, zadejte prosím parametry pro hru");
             Console.Write("[Any Key] --> OK");
             Console.ReadKey();
             Console.Clear();
 
-            Console.WriteLine("Gamemaster (-■_■): Kolik políček v řadě má mít herní pole?:");
+            Console.WriteLine("Gamemaster (-■_■): Kolik sloupců má mít herní pole?:");
             string inputSirka = Console.ReadLine();
             while (!ReadAndCheckLine(inputSirka))
             {
@@ -38,7 +36,7 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
             int sirka = Convert.ToInt32(inputSirka);
             Console.Clear();
 
-            Console.WriteLine("Gamemaster (-■_■): Kolik políček ve sloupci má mít herní pole?:");
+            Console.WriteLine("Gamemaster (-■_■): Kolik řad má mít herní pole?:");
             string inputVyska = Console.ReadLine();
             while (!ReadAndCheckLine(inputVyska))
             {
@@ -90,7 +88,6 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
                         x = Convert.ToInt32(input);
                         isMoveSuccessfull = gameconsole.TryMove(x, i);
                     }
-                    //kontrola výhry
                     Console.Clear();
                 }
             }
@@ -104,7 +101,7 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
                 Height = board.GetLength(0);
                 Board = board;
                 Wincount = wincount;
-                CharacterMap = ['o', ' ', '¤'];
+                CharacterMap = ['o', ' ', 'x'];
             }
             int[,] Board {get;}
             int Wincount {get;}
@@ -157,9 +154,42 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
                             y++;
                         }
                         Board[y - 1, x] = playernum;
+                        for (int m = 0; m < 2; m++)
+                        {
+                            for (int n = 0; n < 2; n++)
+                            {
+                                Console.WriteLine(m+"|"+ n + "|" + x + "|" + y);
+                                Console.ReadKey();
+                                if (CheckWin([m, n],[x, y]))
+                                {
+                                    Console.WriteLine($"Gamemaster (-■_■): Vyhrál hráč {PlayerSymbol(playernum)}, gratuluji");
+                                    Console.Write("[Any Key] --> OK");
+                                    Console.ReadKey();
+                                    break;
+                                }
+                            }
+                        }
                         return true;
                     }
                 }
+            }
+            public bool CheckWin(int[] vector, int[] coords)
+            {
+                StringBuilder sb = new StringBuilder();
+                for (int k = -Wincount + 1; k < Wincount; k++)
+                {
+                    if (coords[0] + k * vector[0] >= 0 && coords[0] + k * vector[0] < Height && coords[1] + k * vector[1] >= 0 && coords[1] + k * vector[1] < Width)
+                    {
+                        sb.Append(Board[coords[0] + k * vector[0], coords[1] + k * vector[1]]);
+                    }
+                }
+                string line = sb.ToString();
+                Console.WriteLine(line);
+                if (line.Contains(new string(CharacterMap[0], Wincount)) || line.Contains(new string(CharacterMap[2], Wincount)))
+                {
+                    return true;
+                }
+                return false;
             }
         }
     }

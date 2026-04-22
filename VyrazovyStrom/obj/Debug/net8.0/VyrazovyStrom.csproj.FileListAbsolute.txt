@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\bin\Debug\net8.0\VyrazovyStrom.exe
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\bin\Debug\net8.0\VyrazovyStrom.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\bin\Debug\net8.0\VyrazovyStrom.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\bin\Debug\net8.0\VyrazovyStrom.dll
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\bin\Debug\net8.0\VyrazovyStrom.pdb
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.dll
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\refint\VyrazovyStrom.dll
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.pdb
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\VyrazovyStrom.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\VyrazovyStrom\obj\Debug\net8.0\ref\VyrazovyStrom.dll
