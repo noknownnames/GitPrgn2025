@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VyrazovyStrom")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29f1c226707d32d6b114a66dc5ffdd004e323177")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f45dee617c1c2900f6bd7221b4ec7c0cb9e075a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("VyrazovyStrom")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VyrazovyStrom")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
