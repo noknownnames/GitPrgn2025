@@ -21,7 +21,7 @@ namespace VyrazovyStrom
             Console.WriteLine("Prefix: " + tree.ToPref());
             Console.WriteLine("Infix: " + tree.ToInfx());
             Console.WriteLine();
-            Console.WriteLine(tree.ToInfx()+" = "+tree.Evaluate());
+            Console.WriteLine(tree.ToInfx() + " = " + tree.Evaluate());
         }
     }
     public class ExpressionTree
@@ -48,10 +48,10 @@ namespace VyrazovyStrom
                 }
             }
             Depth = Convert.ToInt32(Math.Ceiling(numOfOperators + 1));
-            Tree = new string[Convert.ToInt32(Math.Pow(2,Depth))];//inicializace pole, které nám bude sloužit jako strom
+            Tree = new string[Convert.ToInt32(Math.Pow(2, Depth))];//inicializace pole, které nám bude sloužit jako strom
             _postFixToTree(1, s);
         }
-        private void _postFixToTree(int i, Stack<string> s)
+        private bool _postFixToTree(int i, Stack<string> s)
         {
             string operationElement = s.Pop();
             Tree[i-1] = operationElement;
@@ -60,6 +60,7 @@ namespace VyrazovyStrom
                 _postFixToTree(i*2+1, s);
                 _postFixToTree(i*2, s);
             }
+            return true;
         }
         public double FindMax()
         {
