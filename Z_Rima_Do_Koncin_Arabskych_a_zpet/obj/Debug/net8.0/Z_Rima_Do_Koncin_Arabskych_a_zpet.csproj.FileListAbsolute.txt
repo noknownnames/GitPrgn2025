@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\bin\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.exe
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\bin\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\bin\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\bin\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.dll
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\bin\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.pdb
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.dll
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\refint\Z_Rima_Do_Koncin_Arabskych_a_zpet.dll
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.pdb
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\Z_Rima_Do_Koncin_Arabskych_a_zpet.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\Z_Rima_Do_Koncin_Arabskych_a_zpet\obj\Debug\net8.0\ref\Z_Rima_Do_Koncin_Arabskych_a_zpet.dll

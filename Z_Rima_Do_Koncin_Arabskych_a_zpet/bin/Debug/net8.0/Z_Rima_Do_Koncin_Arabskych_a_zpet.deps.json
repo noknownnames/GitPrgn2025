@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Z_Rima_Do_Koncin_Arabskych_a_zpet/1.0.0": {
+        "runtime": {
+          "Z_Rima_Do_Koncin_Arabskych_a_zpet.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Z_Rima_Do_Koncin_Arabskych_a_zpet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
