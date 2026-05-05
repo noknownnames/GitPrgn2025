@@ -15,6 +15,7 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
             catch
             {
                 Console.Clear();
+                
                 Console.WriteLine("Gamemaster (-■_■): Co sem píšeš? Zkus něco jiného!:");
                 return false;
             }
@@ -79,7 +80,7 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
                     {
                         Console.Clear();
                         gameconsole.Draw();
-                        Console.WriteLine("Gamemaster (-■_■): Kam to házíš? Zkus to jinam!:");
+                        Console.WriteLine($"Gamemaster (-■_■): Kam to házíš, hráči({gameconsole.PlayerSymbol(i)})? Zkus to jinam!:");
                         input = Console.ReadLine();
                         while (!ReadAndCheckLine(input))
                         {
@@ -153,43 +154,34 @@ namespace Connect4 //podporované znaky: ■▄▀█░▒▓┐┌─┘└│
                             }
                             y++;
                         }
-                        Board[y - 1, x] = playernum;
-                        for (int m = 0; m < 2; m++)
-                        {
-                            for (int n = 0; n < 2; n++)
-                            {
-                                Console.WriteLine(m+"|"+ n + "|" + x + "|" + y);
-                                Console.ReadKey();
-                                if (CheckWin([m, n],[x, y]))
-                                {
-                                    Console.WriteLine($"Gamemaster (-■_■): Vyhrál hráč {PlayerSymbol(playernum)}, gratuluji");
-                                    Console.Write("[Any Key] --> OK");
-                                    Console.ReadKey();
-                                    break;
-                                }
-                            }
-                        }
                         return true;
                     }
                 }
             }
-            public bool CheckWin(int[] vector, int[] coords)
+            public bool CheckWin(int[] coords)
             {
-                StringBuilder sb = new StringBuilder();
-                for (int k = -Wincount + 1; k < Wincount; k++)
+                for (int m = 0; m < 2; m++)
                 {
-                    if (coords[0] + k * vector[0] >= 0 && coords[0] + k * vector[0] < Height && coords[1] + k * vector[1] >= 0 && coords[1] + k * vector[1] < Width)
+                    for (int n = 0; n < 2; n++)
                     {
-                        sb.Append(Board[coords[0] + k * vector[0], coords[1] + k * vector[1]]);
+                        StringBuilder sb = new StringBuilder();
+                        for (int k = -Wincount + 1; k < Wincount; k++)
+                        {
+                            if (coords[0] + k * m >= 0 && coords[0] + k * m < Height && coords[1] + k * n >= 0 && coords[1] + k * n < Width)
+                            {
+                                sb.Append(Board[coords[0] + k * m, coords[1] + k * n]);
+                            }
+                        }
+                        string line = sb.ToString();
+                        Console.WriteLine("XCAGWG" + line);
+                        Console.WriteLine(new string(CharacterMap[0], Wincount));
+                        if (line.Contains(new string(CharacterMap[0], Wincount)) || line.Contains(new string(CharacterMap[2], Wincount)))
+                        {
+                            return true;
+                        }
+                        return false;
                     }
                 }
-                string line = sb.ToString();
-                Console.WriteLine(line);
-                if (line.Contains(new string(CharacterMap[0], Wincount)) || line.Contains(new string(CharacterMap[2], Wincount)))
-                {
-                    return true;
-                }
-                return false;
             }
         }
     }
