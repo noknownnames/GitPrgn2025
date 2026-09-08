@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\bin\Debug\net8.0\TUTORIAL.exe
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\bin\Debug\net8.0\TUTORIAL.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\bin\Debug\net8.0\TUTORIAL.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\bin\Debug\net8.0\TUTORIAL.dll
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\bin\Debug\net8.0\TUTORIAL.pdb
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.dll
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\refint\TUTORIAL.dll
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.pdb
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\TUTORIAL.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\TUTORIAL\obj\Debug\net8.0\ref\TUTORIAL.dll

@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\filmy\bin\Debug\net8.0\filmy.exe
+C:\Users\admin\source\repos\GitPrgn2025\filmy\bin\Debug\net8.0\filmy.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\filmy\bin\Debug\net8.0\filmy.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\filmy\bin\Debug\net8.0\filmy.dll
+C:\Users\admin\source\repos\GitPrgn2025\filmy\bin\Debug\net8.0\filmy.pdb
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.dll
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\refint\filmy.dll
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.pdb
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\filmy.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\filmy\obj\Debug\net8.0\ref\filmy.dll
