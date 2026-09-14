@@ -13,7 +13,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 61,
+          "DockedHeight": 365,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -22,9 +22,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\filmy\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\filmy\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\GitPrgn2025\\filmy\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwC0AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T15:37:43.398Z",
               "IsPinned": true,
@@ -37,7 +37,7 @@
           ]
         },
         {
-          "DockedHeight": 4,
+          "DockedHeight": 61,
           "SelectedChildIndex": -1,
           "Children": [
             {

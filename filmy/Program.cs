@@ -6,14 +6,14 @@ namespace ConsoleApp1
     {
         class Film
         {
-            public Film(string name, string director_name, string director_surname, int year, float num )
+            public Film(string name, string director_name, string director_surname, int year, float num, int num_of_ratings )
             {
                 Name = name;
                 DirectorName = director_name;
                 DirectorSurname = director_surname;
                 Year = year;
                 Score = num;
-                NumOfRatings = 1;
+                NumOfRatings = num_of_ratings;
             }
             public string Name {  get; set; }
             public string DirectorName{ get; set; }
@@ -41,9 +41,9 @@ namespace ConsoleApp1
         }
         static void Main(string[] args)
         {
-            Film jumanji = new Film("Jumanji","Jake","Kasdan", 2017, 3.6f);
-            Film fastandfurious6 = new Film("Fast & Furious 6", "Justin", "Lin", 2013, 3.55f);
-            Film moana = new Film("Moana", "Thomas", "Kail", 2026, 3.35f);
+            Film jumanji = new Film("Jumanji","Jake","Kasdan", 2017, 3.6f, 32560);
+            Film fastandfurious6 = new Film("Fast & Furious 6", "Justin", "Lin", 2013, 3.55f, 32318);
+            Film moana = new Film("Moana", "Thomas", "Kail", 2026, 3.35f, 603);
             List<Film> films = new List<Film>(){jumanji, fastandfurious6, moana};
 
             foreach (Film film in films)
