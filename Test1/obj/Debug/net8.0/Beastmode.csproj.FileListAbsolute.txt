@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\bin\Debug\net8.0\Beastmode.exe
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\bin\Debug\net8.0\Beastmode.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\bin\Debug\net8.0\Beastmode.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\bin\Debug\net8.0\Beastmode.dll
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\bin\Debug\net8.0\Beastmode.pdb
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.dll
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\refint\Beastmode.dll
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.pdb
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\Beastmode.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\Beastmode\obj\Debug\net8.0\ref\Beastmode.dll

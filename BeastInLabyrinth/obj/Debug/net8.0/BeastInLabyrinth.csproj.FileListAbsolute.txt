@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\bin\Debug\net8.0\BeastInLabyrinth.exe
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\bin\Debug\net8.0\BeastInLabyrinth.deps.json
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\bin\Debug\net8.0\BeastInLabyrinth.runtimeconfig.json
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\bin\Debug\net8.0\BeastInLabyrinth.dll
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\bin\Debug\net8.0\BeastInLabyrinth.pdb
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.AssemblyInfo.cs
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.sourcelink.json
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.dll
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\refint\BeastInLabyrinth.dll
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.pdb
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\BeastInLabyrinth.genruntimeconfig.cache
+C:\Users\admin\source\repos\GitPrgn2025\BeastInLabyrinth\obj\Debug\net8.0\ref\BeastInLabyrinth.dll

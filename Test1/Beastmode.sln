@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37628.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beastmode", "Beastmode.csproj", "{D89754A3-8883-4A48-B61C-1DDDBDC62D8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D89754A3-8883-4A48-B61C-1DDDBDC62D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89754A3-8883-4A48-B61C-1DDDBDC62D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89754A3-8883-4A48-B61C-1DDDBDC62D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89754A3-8883-4A48-B61C-1DDDBDC62D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F021AD3-93CB-4DFB-A726-D3270177D6D7}
+	EndGlobalSection
+EndGlobal

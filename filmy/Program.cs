@@ -48,7 +48,7 @@ namespace ConsoleApp1
 
             foreach (Film film in films)
             {
-                for (int i = 0; i < 15; i++)
+                for (int i = 0; i < 10005; i++)
                 {
                     film.Rate(new Random().Next(0, 6));
                 }
