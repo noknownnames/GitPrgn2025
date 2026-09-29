@@ -76,7 +76,6 @@ namespace BeastInLabyrinth
                 if (Charraysquared[beast.X + Dirs[2 * (beast.Dir + 1) - 1][0], beast.Y + Dirs[2 * (beast.Dir + 1) - 1][1]] == '.')
                 {
                     //je diagonálně vepředu od nás stěna? || je vedle nás stěna? <-- upřímě nevím jak se má rozhodovat, tak aby se hýbal podle příkladu v classroomu, každopádné to je vśechno na tomhle řádku jestli to chc(e/i)/musí(m) někdo/já změnit tečka.
-                    Console.WriteLine($"beastXY{beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 - 2)][0]},{beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 - 2)][1]},{beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 +5)%8][0]},{beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 +5)%8][1]}");
                     if (Charraysquared[beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 - 2)][0], beast.Y + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 - 2)][1]] == 'X' || Charraysquared[beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 +5)%8][0], beast.Y + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 +5)%8][1]] == 'X')
                     {
                         return true;
@@ -109,7 +108,7 @@ namespace BeastInLabyrinth
             }
             private void TurnRight(Beast beast)
             {
-                beast.Dir += -1;
+                beast.Dir += 3;
                 beast.Dir %= 4;
                 Charraysquared[beast.X, beast.Y] = BeastData[beast.Type].Item2[beast.Dir];
                 beast.WasPreviousChoiceTurnLeft = false;
