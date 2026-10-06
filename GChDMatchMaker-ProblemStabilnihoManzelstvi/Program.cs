@@ -18,9 +18,11 @@ namespace GChDMatchMaker_ProblemStabilnihoManzelstvi
             }
             Console.WriteLine(sb.ToString());
         }
-        static (int,int)[] CreateOptimalShippingPairs(int[,] mPregMatrix, int[,] wPregMatrix)
+        static (int,int)[] CreateOptimalYaoiShippingPairs(int[,] BottomPreferenceArrays, int[,] TopPreferenceArrays)
         {
-            
+            int[] ShippedBottoms = new int[BottomPreferenceArrays.GetLength(0)];
+            int[] ShippedTops = new int[TopPreferenceArrays.GetLength(0)];
+            int[] Ships = new int[TopPreferenceArrays.GetLength(0)];
         } 
         public class Parser()
         {

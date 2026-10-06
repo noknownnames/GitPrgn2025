@@ -27,9 +27,9 @@ namespace BeastInLabyrinth
             /// <param name="charraysquared">pole char-ů ^ 2, reprezentující bludiště</param>
             public Labyrint(char[,] charraysquared)
             {
-                Dirs = [[1, 1], [1, 0], [1, -1], [0, -1], [-1, -1], [-1, 0], [-1, 1], [0, 1]];
+                Dirs = [[1, 0], [1, -1], [0, -1], [-1, -1], [-1, 0], [-1, 1], [0, 1], [1, 1]];
                 Charraysquared = charraysquared;
-                BeastData = [new Tuple<int, char[], bool>(0,['>', '^', '<', 'v'],false),new Tuple<int, char[], bool>(1, ['3', 'm', 'ε', 'ω'],true)];
+                BeastData = [new Tuple<int, char[], bool>(0,['>', '^', '<', 'v'],false),new Tuple<int, char[], bool>(1, ['3', 'M', 'W', 'E'],true)];
                 Beasts = [];
                 ;
                 for (int i = 0; i < charraysquared.GetLength(0); i++)
@@ -72,46 +72,43 @@ namespace BeastInLabyrinth
             }
             private bool TryMove(Beast beast)
             {
-                //je cesta volná a je tam stěna na správné straně?
-                if (Charraysquared[beast.X + Dirs[2 * (beast.Dir + 1) - 1][0], beast.Y + Dirs[2 * (beast.Dir + 1) - 1][1]] == '.')
+                //je cesta volná a je tam stěna na správné straně? je diagonálně vepředu od nás stěna? || je vedle nás stěna? <-- upřímě nevím jak se má rozhodovat, tak aby se hýbal podle příkladu v classroomu, každopádné to je vśechno na tomhle řádku jestli to chc(e/i)/musí(m) někdo/já změnit tečka.
+                if ((Charraysquared[beast.X + Dirs[(2 * beast.Dir + Convert.ToInt16(beast.IsSinistrous) * 2 - 1 + 40)%8][0], beast.Y + Dirs[(2 * beast.Dir + Convert.ToInt16(beast.IsSinistrous) * 2 - 1 + 40) %8][1]] == 'X' 
+                || Charraysquared[beast.X + Dirs[(2 * beast.Dir + (Convert.ToInt16(beast.IsSinistrous) * 2 -1)*2 + 40) %8][0], beast.Y + Dirs[(2 * beast.Dir + (Convert.ToInt16(beast.IsSinistrous) * 2 -1)*2 + 40) %8][1]] == 'X')
+                && Charraysquared[beast.X + Dirs[2*beast.Dir][0], beast.Y + Dirs[2*beast.Dir][1]] == '.')
                 {
-                    //je diagonálně vepředu od nás stěna? || je vedle nás stěna? <-- upřímě nevím jak se má rozhodovat, tak aby se hýbal podle příkladu v classroomu, každopádné to je vśechno na tomhle řádku jestli to chc(e/i)/musí(m) někdo/já změnit tečka.
-                    if (Charraysquared[beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 - 2)][0], beast.Y + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 - 2)][1]] == 'X' || Charraysquared[beast.X + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 +5)%8][0], beast.Y + Dirs[(2 * (beast.Dir + 1) + Convert.ToInt16(beast.IsSinistrous) * 2 +5)%8][1]] == 'X')
-                    {
-                        return true;
-                    }
+                    return true;
                 }
                 return false;
             }
             private void Move(Beast beast)
             {
                 Charraysquared[beast.X, beast.Y] = '.';
-                beast.X += Dirs[2 * (beast.Dir + 1) - 1][0];
-                beast.Y += Dirs[2 * (beast.Dir + 1) - 1][1];
+                beast.X += Dirs[2 * beast.Dir][0];
+                beast.Y += Dirs[2 * beast.Dir][1];
                 Charraysquared[beast.X, beast.Y] = BeastData[beast.Type].Item2[beast.Dir];
-                beast.WasPreviousChoiceTurnLeft = false;
             }
             private bool TryTurnLeft(Beast beast)
             {
-                if (Charraysquared[beast.X + Dirs[2 * ((beast.Dir+1)%4 + 1) - 1][0], beast.Y + Dirs[2 * ((beast.Dir + 1) % 4 + 1) - 1][1]] == '.')
+                if (Charraysquared[beast.X + Dirs[(2*beast.Dir + 4998)%8][0], beast.Y + Dirs[(2 * beast.Dir + 4998)%8][1]] == 'X' 
+                    && Charraysquared[beast.X + Dirs[(2 * beast.Dir + 4000) % 8][0], beast.Y + Dirs[(2 * beast.Dir + 4000) % 8][1]] == 'X')
                 {
                     return true;
                 }
                 return false;
             }
-            private void TurnLeft(Beast beast)
+            private void Turn(Beast beast)
             {
-                beast.Dir += 1;
+                if (TryTurnLeft(beast))
+                {
+                    beast.Dir += 1;
+                }
+                else
+                {
+                    beast.Dir += 3;
+                }
                 beast.Dir %= 4;
                 Charraysquared[beast.X, beast.Y] = BeastData[beast.Type].Item2[beast.Dir];
-                beast.WasPreviousChoiceTurnLeft = true;
-            }
-            private void TurnRight(Beast beast)
-            {
-                beast.Dir += 3;
-                beast.Dir %= 4;
-                Charraysquared[beast.X, beast.Y] = BeastData[beast.Type].Item2[beast.Dir];
-                beast.WasPreviousChoiceTurnLeft = false;
             }
             public void Tick()
             {
@@ -121,20 +118,9 @@ namespace BeastInLabyrinth
                     {
                         Move(Beasts[m]);
                     }
-                    else if (TryTurnLeft(Beasts[m]))
-                    {
-                        TurnLeft(Beasts[m]);
-                    }
                     else
                     {
-                        if (!Beasts[m].WasPreviousChoiceTurnLeft)
-                        {
-                            TurnRight(Beasts[m]);
-                        }
-                        else
-                        {
-                            TurnLeft(Beasts[m]);
-                        }
+                        Turn(Beasts[m]);
                     }
                 }
             }
@@ -149,7 +135,6 @@ namespace BeastInLabyrinth
                 X = x;
                 Y = y;
                 Dir = direction;
-                WasPreviousChoiceTurnLeft = false;
             }
             public int Type { get; set; }
             public char[] Shapes { get; set; }
@@ -157,7 +142,6 @@ namespace BeastInLabyrinth
             public int Dir {  get; set; }
             public int X { get; set; }
             public int Y { get; set; }
-            public bool WasPreviousChoiceTurnLeft { get; set; }
 
         }
             static void Main(string[] args)
